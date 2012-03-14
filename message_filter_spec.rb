@@ -9,6 +9,9 @@ describe MessageFilter do
   context 'with argument "foo"'do
     subject{MessageFilter.new('foo')}
     it_should_behave_like 'MessageFilter with argument "foo"'
+    it 'ng_words should not be empty' do
+      subject.ng_words.empty?.should == false
+    end
   end
   context 'with argument "foo","bar"'do
     subject{MessageFilter.new('foo','bar')}
