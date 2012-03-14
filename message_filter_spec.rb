@@ -2,7 +2,7 @@ require 'rspec'
 require_relative '../message_filter/message_filter'
 
 describe MessageFilter do
-  before(:each)do
+  before do
     @filter = MessageFilter.new('foo')
   end
   it 'should detect message with NG word' do
