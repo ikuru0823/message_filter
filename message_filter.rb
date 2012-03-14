@@ -1,5 +1,2 @@
-require 'rubygems'
-require 'spec'
-
-describe MessageFilter do
+class MessageFilter
 end
