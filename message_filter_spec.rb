@@ -10,9 +10,7 @@ describe MessageFilter do
   context 'with argument "foo"'do
     subject{MessageFilter.new('foo')}
     it_should_behave_like 'MessageFilter with argument "foo"'
-    it 'ng_words size is 1' do
-      subject.ng_words.should have(1).items
-    end
+    it{should have(1).ng_words}
   end
   context 'with argument "foo","bar"'do
     subject{MessageFilter.new('foo','bar')}
